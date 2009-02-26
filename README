@@ -2,6 +2,8 @@ To Do:
 
  - Why is it that I have to use the address 'http://127.0.0.1:8000//hello/'
    instead of 'http://127.0.0.1:8000/hello/' to get to my hello world page?
+   I suspect this is just a typo in the tutorial.  The regular expression
+   syntax seems to match the results.
 
  - Figure out how to automatically turn off debug mode when hosted in a
    production environment, so that 404 errors don't give away too much info.
