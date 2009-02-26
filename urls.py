@@ -1,5 +1,6 @@
 from django.conf.urls.defaults import *
 from mysite.views import hello
+from mysite.views import my_homepage_view
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -16,5 +17,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # (r'^admin/(.*)', admin.site.root),
     
+    ('^$', my_homepage_view),
     ('^/hello/$', hello),
 )
