@@ -4,6 +4,10 @@ To Do:
    instead of 'http://127.0.0.1:8000/hello/' to get to my hello world page?
    I suspect this is just a typo in the tutorial.  The regular expression
    syntax seems to match the results.
+		- This is because django automatically removes the leading slash
+		  from the url before trying to match it up with urls.py.
+		  Apparently it is so that you can including other urls.py in
+		  your project?
 
  - Figure out how to automatically turn off debug mode when hosted in a
    production environment, so that 404 errors don't give away too much info.
