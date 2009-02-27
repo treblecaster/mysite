@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from mysite.views import hello, my_homepage_view, current_datetime
+from mysite.views import hello, my_homepage_view, current_datetime, hours_ahead
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -19,4 +19,5 @@ urlpatterns = patterns('',
     (r'^$', my_homepage_view),
     (r'^hello/$', hello),
     (r'^time/$', current_datetime),
+    (r'^time/plus/(\d{1,2})/$', hours_ahead),
 )
